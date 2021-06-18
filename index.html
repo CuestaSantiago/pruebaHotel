@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hotel</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+<style type="text/css">
+.formulario {
+	margin-left: 28%;
+}
+
+#foto {
+	background-image: url('./images/quito.jpg');
+	background-size: 100% 100%;
+	text-shadow: 3px 4px black;
+	background-repeat: no-repeat;
+}
+</style>
+
+</head>
+<body class="homepage">
+	<!-- video flotante -->
+	<div class="ventana_flotante">
+		<!--Aqui el Codigo-->
+	</div>
+	<!-- Header -->
+	<header id="header-wrapper" class="wrapper">
+		<div id="header">
+			<!-- Logo -->
+			<div id="logo">
+				<h1>
+					<a href="index.html">Hotel Buena Vista</a>
+				</h1>
+
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="./habitaciones.html">Habitaciones</a></li>
+					<li><a href="./promociones.html">Promociones</a></li>
+					<li><a href="./restaurante.html">Restaurante</a></li>
+					<li><a href="./ubicacion.html">Ubicación</a></li>
+					<li><a href="./contactanos.html">Contáctanos</a></li>
+					<li><a href="./misionVision.html">Misión y Visión</a></li>
+
+
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- Main -->
+	<div class="wrapper style2">
+		<div class="title">Reserva ya..!</div>
+		<!-- formulario -->
+		<section class="formulario">
+			<form id="formCliente">
+				<div class="row 50%">
+					<div>
+						<label><i class="fa fa-user-o" aria-hidden="true"></i>
+							Nombre</label> <input type="text" placeholder="Nombre" name="nombre"
+							required>
+					</div>
+					<div>
+						<label><i class="fa fa-user-o" aria-hidden="true"></i>
+							Apellido</label> <input type="text" placeholder="Apellido"
+							name="apellido" required>
+					</div>
+
+				</div>
+				<div class="row 50%">
+					<div>
+						<label><i class="fa fa-address-card" aria-hidden="true"></i>
+							Número de Cèdula</label> <input type="text" placeholder="xxxxxxxxxxxx"
+							name="Ncedula" required>
+					</div>
+					<div>
+						<label><i class="fa fa-phone"></i> Numero de Telefono</label> <input
+							type="text" placeholder="000-000-000" name="Ntelf" required>
+					</div>
+
+				</div>
+
+
+				<div class="row 50%">
+					<div>
+						<label><i class="fa fa-calendar-o"></i> Dia de ingreso</label> <input
+							type="text" placeholder="DD MM YYYY" name="diaIngreso" id="date"
+							required>
+					</div>
+					<div>
+						<label><i class="fa fa-calendar-o"></i> Dia de salida</label> <input
+							type="text" placeholder="DD MM YYYY" name="diaSalida" required>
+					</div>
+
+				</div>
+				<div class="row 50%">
+
+					<div style="width: 30%">
+						<label><i class="fa fa-male"></i> Adultos</label> <input
+							type="number" placeholder="1">
+					</div>
+					<div>
+						<label><i class="fa fa-child"></i> Niños</label> <input
+							class="w3-input w3-border" type="number" placeholder="0">
+					</div>
+
+				</div>
+
+				<br /> <a id="buttonr" href="./index.html"
+					class="button style3 big">Reservar</a>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$("#formCliente\\:date").mask("99/99/9999");
+					});
+				</script>
+			</form>
+		</section>
+
+	</div>
+
+	<!-- Intro -->
+	<div id="intro-wrapper" class="wrapper style1">
+		<div class="title">Da un vistaso</div>
+		<section id="intro" class="container">
+			<p class="style1">Buen servicio para buena clientela</p>
+			<video width="350" controls="controls" autoplay="autoplay">
+				<source src="./videos/quito.mp4" type="video/mp4">
+			</video>
+			<p class="style2" id="foto">Escape de la realidad y venga a
+				nuestro hotel a pasarla bien en sus vacaciones</p>
+			<p class="style3">Dale un vistaso a nuestras instalaciones y a
+				todos los detalles de nuestros cuartos.</p>
+
+			<ul class="actions">
+				<li><a href="./habitaciones.html" class="button style3 big">Vamos</a></li>
+			</ul>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="jquery.maskedinput.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"
+		type="text/javascript"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+		type="text/javascript"></script>
+	<script src="assets/js//99883.js" type="text/javascript"></script>
+
+
+</body>
+</html>
